@@ -1,3 +1,5 @@
+<div align="center">
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -16,10 +18,13 @@
 [![AWS][AWS]][AWS-url]
 [![Vapi][Vapi]][Vapi-url]
 [![Sentry][Sentry]][Sentry-url]
+[![Bun][Bun]][Bun-url]
+
+</div>
 
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/echo">
+  <a href="https://github.com/nbnguyen75/echo">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -28,14 +33,14 @@
   <p align="center">
     A full-stack, production-ready AI customer support platform with real-time chat, voice, RAG-powered knowledge base, and human handoff.
     <br />
-    <a href="https://github.com/github_username/echo"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/nbnguyen75/echo"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/echo">View Demo</a>
+    <a href="https://github.com/nbnguyen75/echo">View Demo</a>
     ·
-    <a href="https://github.com/github_username/echo/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/nbnguyen75/echo/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/echo/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/nbnguyen75/echo/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -107,6 +112,7 @@ Inspired by and built along with [Code With Antonio](https://www.youtube.com/@co
 * [![AWS][AWS]][AWS-url]
 * [![Vapi][Vapi]][Vapi-url]
 * [![Sentry][Sentry]][Sentry-url]
+* [![Bun][Bun]][Bun-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,8 +126,13 @@ Follow these steps to get a local copy of Echo up and running.
   ```sh
   node -v
   ```
-* pnpm (used for the Turborepo monorepo)
+* Package manager — this monorepo works with either **Bun** (recommended, faster installs) or **pnpm**:
   ```sh
+  # Bun
+  curl -fsSL https://bun.sh/install | bash
+  bun -v
+
+  # or pnpm
   npm install -g pnpm
   ```
 * Accounts/API keys for:
@@ -136,9 +147,16 @@ Follow these steps to get a local copy of Echo up and running.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/echo.git
+   git clone https://github.com/nbnguyen75/echo.git
+   cd echo
    ```
 2. Install dependencies
+
+   Using Bun:
+   ```sh
+   bun install
+   ```
+   Using pnpm:
    ```sh
    pnpm install
    ```
@@ -155,16 +173,28 @@ Follow these steps to get a local copy of Echo up and running.
    SENTRY_DSN=
    ```
 4. Push your Convex schema
+
+   Using Bun:
+   ```sh
+   bun convex dev
+   ```
+   Using pnpm:
    ```sh
    pnpm convex dev
    ```
 5. Run the dev server
+
+   Using Bun:
+   ```sh
+   bun dev
+   ```
+   Using pnpm:
    ```sh
    pnpm dev
    ```
 6. Change the git remote to avoid accidental pushes to the base project
    ```sh
-   git remote set-url origin github_username/echo
+   git remote set-url origin nbnguyen75/echo
    git remote -v # confirm the changes
    ```
 
@@ -189,7 +219,7 @@ _For more examples and API reference, please refer to the [Documentation](https:
 - [ ] Mobile-optimized widget
 - [ ] Additional AI model providers
 
-See the [open issues](https://github.com/github_username/echo/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/nbnguyen75/echo/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -215,7 +245,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@example.com
 
-Project Link: [https://github.com/github_username/echo](https://github.com/github_username/echo)
+Project Link: [https://github.com/nbnguyen75/echo](https://github.com/nbnguyen75/echo)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -231,16 +261,16 @@ Project Link: [https://github.com/github_username/echo](https://github.com/githu
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/echo.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/echo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/echo.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/echo/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/echo.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/echo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/echo.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/echo/issues
-[license-shield]: https://img.shields.io/github/license/github_username/echo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/echo/blob/main/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/nbnguyen75/echo.svg?style=for-the-badge
+[contributors-url]: https://github.com/nbnguyen75/echo/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/nbnguyen75/echo.svg?style=for-the-badge
+[forks-url]: https://github.com/nbnguyen75/echo/network/members
+[stars-shield]: https://img.shields.io/github/stars/nbnguyen75/echo.svg?style=for-the-badge
+[stars-url]: https://github.com/nbnguyen75/echo/stargazers
+[issues-shield]: https://img.shields.io/github/issues/nbnguyen75/echo.svg?style=for-the-badge
+[issues-url]: https://github.com/nbnguyen75/echo/issues
+[license-shield]: https://img.shields.io/github/license/nbnguyen75/echo.svg?style=for-the-badge
+[license-url]: https://github.com/nbnguyen75/echo/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
@@ -267,3 +297,5 @@ Project Link: [https://github.com/github_username/echo](https://github.com/githu
 [Vapi-url]: https://vapi.ai/
 [Sentry]: https://img.shields.io/badge/Sentry-362D59?style=for-the-badge&logo=sentry&logoColor=white
 [Sentry-url]: https://sentry.io/
+[Bun]: https://img.shields.io/badge/Bun-000000?style=for-the-badge&logo=bun&logoColor=white
+[Bun-url]: https://bun.sh/
