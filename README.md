@@ -28,7 +28,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Echo — B2B AI SaaS Support Platform</h3>
+  <h3 align="center">Echo</h3>
 
   <p align="center">
     A full-stack, production-ready AI customer support platform with real-time chat, voice, RAG-powered knowledge base, and human handoff.
